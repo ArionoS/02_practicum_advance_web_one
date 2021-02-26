@@ -14,10 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    echo"welcome";
 });
 Route::get('/about', function () {
-    return "Ariono Septian Jaya 1941720092";
+    echo"Ariono Septian Jaya 1941720092";
 });
 
 Route::get('/articles/{id}', function ($id) {
