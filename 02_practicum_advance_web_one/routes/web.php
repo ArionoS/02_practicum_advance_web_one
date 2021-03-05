@@ -23,3 +23,6 @@ Route::get('/about', function () {
 Route::get('/articles/{id}', function ($id) {
     echo "Halaman Artikel dengan ID".$id;
 });
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
